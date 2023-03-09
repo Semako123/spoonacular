@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { hbg } from "../../assets/images";
 // import axios from "axios";
 
 const Home = () => {
@@ -24,7 +25,13 @@ const Home = () => {
   // }).then((res) => {
   //   console.log(res);
   // });
-  return <div>Home</div>;
+  return (
+    <div>
+      <div className="home__bg">
+        <img src={hbg} alt="" />
+      </div>
+    </div>
+  );
 };
 
 export default Home;
