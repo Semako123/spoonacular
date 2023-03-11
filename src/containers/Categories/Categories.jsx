@@ -3,6 +3,7 @@ import "./categories.css";
 import { useState } from "react";
 import { cake, bread, dessert, pie } from "../../assets/images";
 import { Button } from "../../components";
+import "animate.css/animate.css";
 
 const Categories = () => {
   const cat = [
@@ -81,11 +82,15 @@ const Categories = () => {
             <h4>{x.name}</h4>
             {expanded[index] && (
               <>
-                <p>{x.text}</p>
-                <p id="subtext">{x.subtext}</p>
-                <Button variant="curved" color={x.color}>
-                  Discover
-                </Button>
+                <p className="animate__animated animate__fadeInUp">{x.text}</p>
+                <p id="subtext" className="animate__animated animate__fadeInUp">
+                  {x.subtext}
+                </p>
+                <div className="animate__animated animate__zoomIn">
+                  <Button className variant="curved" color={x.color}>
+                    Discover
+                  </Button>
+                </div>
               </>
             )}
           </div>
