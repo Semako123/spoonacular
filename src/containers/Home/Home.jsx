@@ -8,7 +8,6 @@ const Home = () => {
   const [bgHeight, setBgHeight] = useState("");
   useEffect(() => {
     setBgHeight(document.querySelector(".home__bg img").offsetHeight);
-    console.log(bgHeight)
   }, );
   return (
     <div className="home" style={{ height: `${bgHeight}px` }}>
