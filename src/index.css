@@ -17,4 +17,8 @@ body {
     --font-biryaniBold: 'Biryani-bold';
     --font-AgencyFB: 'AgencyFB';
     --color-goldGradient: linear-gradient(180deg, #EBB559 0%, #BE7319 100%);
+    --color-brownGradient: linear-gradient(270deg, #68401B 0%, #FAE6A6 100%);
+    --color-blueGradient: linear-gradient(270deg, #00ACB7 0%, #5BD8FF 100%);
+    --color-purpleGradient: linear-gradient(270deg, #EDBD5B 0%, #AB1580 100%);
+    --color-pinkGradient: linear-gradient(270deg, #F39A9A 0%, #7A8F9A 100%);
 }

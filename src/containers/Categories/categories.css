@@ -11,7 +11,30 @@
 }
 
 .category__section {
+    position: relative;
     overflow: hidden;
-    transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+.category__section-content {
+    top: 15%;
+    position: absolute;
+    z-index: 2;
+    left: 15%;
+}
+
+.category__section-content h4 {
+    font-size: 35px;
+    font-family: var(--font-AgencyFB);
+}
+
+.category__section-content p {
+    width: 95%;
+    font-family: var(--font-AgencyFB);
+    font-size: 28px;
+    margin: 50px 0 20px 0;
+}
+
+#subtext {
+    font-size: 18px;
+    color: #cdcdcd;
+}

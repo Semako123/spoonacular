@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { hbg } from "../../assets/images";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "../../components";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
       <div className="home__content">
         <h2>Be the chef of your kitchen</h2>
         <p>From Breakfast to Dinner, We have You Covered</p>
-        <Button variant="filled">Get Cooking Now</Button>
+        <Button variant="rounded" color="gold">Get Cooking Now</Button>
       </div>
     </div>
   );
