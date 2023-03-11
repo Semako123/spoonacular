@@ -42,7 +42,7 @@ const Cuisine = () => {
           modules={[Autoplay]}
           slidesPerView={"auto"}
           autoplay={{
-            delay: 1500,
+            delay: 2000,
             disableOnInteraction:false
           }}
           spaceBetween={80}
