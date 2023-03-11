@@ -6,13 +6,16 @@ import { Button } from "../../components";
 
 const Home = () => {
   const [bgHeight, setBgHeight] = useState("");
-  useEffect(() => {
-    setBgHeight(document.querySelector(".home__bg img").offsetHeight);
-  }, );
   return (
     <div className="home" style={{ height: `${bgHeight}px` }}>
       <div className="home__bg">
-        <img src={hbg} alt="" />
+        <img
+          src={hbg}
+          alt=""
+          onLoad={() => {
+            setBgHeight(document.querySelector(".home__bg img").offsetHeight);
+          }}
+        />
       </div>
       <div className="home__content">
         <h2>Be the chef of your kitchen</h2>
