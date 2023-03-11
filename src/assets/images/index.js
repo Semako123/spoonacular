@@ -3,3 +3,8 @@ export { default as cake } from "./cake.png";
 export { default as pie } from "./pie.png";
 export { default as dessert } from "./dessert.png";
 export { default as bread } from "./bread.png";
+export { default as african } from "./african.jpg";
+export { default as italian } from "./italian.jpg";
+export { default as thai } from "./thai.jpg";
+export { default as chinese } from "./chinese.jpg";
+export { default as french } from "./french.jpg";

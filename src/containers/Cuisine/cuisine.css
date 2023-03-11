@@ -1,0 +1,21 @@
+.cuisine {}
+
+.cuisine__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuisine__title h4 {
+    font-family: var(--font-AgencyFB);
+    font-size: 20px;
+}
+
+.swiper-wrapper {
+    padding: 50px;
+}
+
+.swiper-slide {
+    height: 290px !important;
+    width: 320px !important;
+}
