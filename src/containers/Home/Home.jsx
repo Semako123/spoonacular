@@ -1,34 +1,24 @@
 import React from "react";
 import "./home.css";
 import { hbg } from "../../assets/images";
-// import axios from "axios";
+import { useEffect, useState } from "react";
+import { Button } from "../../components";
 
 const Home = () => {
-
-  // const config = {
-  //   headers: {
-  //     "Access-Control-Allow-Origin": "*",
-  //     "Content-Type": "application/json",
-  //   },
-  // };
-
-  // const API = axios.create({
-  //   baseURL: "https://api.spoonacular.com/",
-  //   https: config,
-  // });
-
-  // API.get("/recipes/complexSearch", {
-  //   params: {
-  //     cuisine:"italian",
-  //     apiKey: "2f2001aef23b46b6837008671ba6e399",
-  //   },
-  // }).then((res) => {
-  //   console.log(res);
-  // });
+  const [bgHeight, setBgHeight] = useState("");
+  useEffect(() => {
+    setBgHeight(document.querySelector(".home__bg img").offsetHeight);
+    console.log(bgHeight)
+  }, );
   return (
-    <div>
+    <div className="home" style={{ height: `${bgHeight}px` }}>
       <div className="home__bg">
         <img src={hbg} alt="" />
+      </div>
+      <div className="home__content">
+        <h2>Be the chef of your kitchen</h2>
+        <p>From Breakfast to Dinner, We have You Covered</p>
+        <Button variant="filled">Get Cooking Now</Button>
       </div>
     </div>
   );

@@ -1,4 +1,36 @@
+.home {
+    display: grid;
+    position: relative;
+    align-items: center;
+}
+
 .home__bg,
 .home__bg img {
     width: 100%;
+}
+
+.home__bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.home__content {
+    font-family: var(--font-AgencyFB);
+    color: #fff;
+    padding-left: 100px;
+}
+
+.home__content h2 {
+    font-size: 85px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.home__content p{
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 60px;
 }

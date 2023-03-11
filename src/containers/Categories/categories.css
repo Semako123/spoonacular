@@ -1,0 +1,12 @@
+.category {
+    display: flex;
+}
+
+.category__section img {
+    height: 100%;
+}
+
+.category__section {
+    overflow: hidden;
+    transition: width 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}

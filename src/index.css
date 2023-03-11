@@ -7,8 +7,14 @@ body {
 
 body {
     background-color: var(--color-background);
+    color: #fff;
 }
 
 :root {
-    --color-background: #000
+    --color-background: #000;
+    --font-biryaniLight: 'Biryani-light';
+    --font-biryaniRegular: 'Biryani-regular';
+    --font-biryaniBold: 'Biryani-bold';
+    --font-AgencyFB: 'AgencyFB';
+    --color-goldGradient: linear-gradient(180deg, #EBB559 0%, #BE7319 100%);
 }

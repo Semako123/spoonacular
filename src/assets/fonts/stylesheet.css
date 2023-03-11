@@ -1,0 +1,71 @@
+/* @font-face {
+    font-family: 'Biryani';
+    src: url('Biryani-Heavy.woff2') format('woff2'),
+        url('Biryani-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+} */
+
+/* @font-face {
+    font-family: 'Biryani';
+    src: url('Biryani-UltraLight.woff2') format('woff2'),
+        url('Biryani-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Biryani-light';
+    src: url('Biryani-Light.woff2') format('woff2'),
+        url('Biryani-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biryani-regular';
+    src: url('Biryani-Regular.woff2') format('woff2'),
+        url('Biryani-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biryani-bold';
+    src: url('Biryani-Bold.woff2') format('woff2'),
+        url('Biryani-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AgencyFB';
+    src: url('AgencyFB-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* 
+@font-face {
+    font-family: 'Biryani';
+    src: url('Biryani-ExtraBold.woff2') format('woff2'),
+        url('Biryani-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biryani';
+    src: url('Biryani-DemiBold.woff2') format('woff2'),
+        url('Biryani-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+ */
