@@ -50,6 +50,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 /* 
 @font-face {
     font-family: 'Biryani';
@@ -69,3 +70,19 @@
     font-display: swap;
 }
  */
+
+@font-face {
+    font-family: 'Playfair Bold';
+    src: url('PlayfairDisplaySC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Regular';
+    src: url('PlayfairDisplaySC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

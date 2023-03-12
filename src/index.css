@@ -5,12 +5,13 @@ body {
     margin: 0;
 }
 
+
 body {
     background-color: var(--color-background);
     color: #fff;
 }
 
-.section__padding{
+.section__padding {
     padding: 30px;
 }
 
@@ -18,6 +19,8 @@ body {
     --color-background: #000;
     --font-biryaniLight: 'Biryani-light';
     --font-biryaniRegular: 'Biryani-regular';
+    --font-playfairRegular: 'Playfair Regular';
+    --font-playfairBold: 'Playfair Bold';
     --font-biryaniBold: 'Biryani-bold';
     --font-AgencyFB: 'AgencyFB';
     --color-goldGradient: linear-gradient(180deg, #EBB559 0%, #BE7319 100%);

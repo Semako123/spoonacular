@@ -11,7 +11,6 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route index element={<App />} loader={homeLoader} />
-      <Route path="home" element={<App />} />
       <Route path="search" element={<Search />}>
         <Route path=":id" element={<Result />} />
       </Route>

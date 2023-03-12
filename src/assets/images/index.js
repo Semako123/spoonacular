@@ -8,3 +8,5 @@ export { default as italian } from "./italian.jpg";
 export { default as thai } from "./thai.jpg";
 export { default as chinese } from "./chinese.jpg";
 export { default as french } from "./french.jpg";
+export { default as timeP } from "./time.png";
+export { default as love } from "./love.png";

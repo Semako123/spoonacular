@@ -1,0 +1,49 @@
+.fcard {
+    width: 300px;
+}
+
+.fcard img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 15px 20px 0 rgba(23, 23, 23, 0.5);
+    /* border-radius: 10px; */
+}
+
+.fcard__content {
+    width: 230px;
+    padding: 20px;
+    background: #1D1C20;
+    margin: auto;
+    transform: translateY(-50px);
+    box-shadow: 0 15px 20px 0 rgba(23, 23, 23, 0.5);
+    transition: transform 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-family: var(--font-playfairRegular);
+    border-radius: 10px;
+}
+
+.fcard__content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.fcard__content p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.fcard__content-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.fcard__content img {
+    height: 60px;
+    width: 60px;
+}
+
+.fcard__content:hover {
+    transform: translateY(-80px);
+}
