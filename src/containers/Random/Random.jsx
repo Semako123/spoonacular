@@ -3,20 +3,40 @@ import "./random.css";
 import axios from "axios";
 import { useLoaderData } from "react-router-dom";
 import { FCard } from "../../components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Random = () => {
   const data = useLoaderData();
-  console.log(data);
   return (
     <div className="section__padding random">
       <h4>Looking for random inspiration on your next adventure</h4>
-      <FCard
-        title={data[0].title}
-        likes={data[0].aggregateLikes}
-        time={data[0].readyInMinutes}
-        cuisines={data[0].cuisines}
-        image={data[0].image}
-      />
+      <div>
+        <Swiper
+          pagination={true}
+          modules={[Autoplay]}
+          slidesPerView={"auto"}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          spaceBetween={80}
+        >
+          {data.map((x, index) => (
+            <SwiperSlide key={index}>
+              <FCard
+                title={x.title}
+                likes={x.aggregateLikes}
+                time={x.readyInMinutes}
+                cuisines={x.cuisines}
+                image={x.image}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import "./App.css";
 import { Home, Random, Categories, Cuisine } from "./containers";
 
-
 function App() {
   return (
     <div className="App">

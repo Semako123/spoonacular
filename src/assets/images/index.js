@@ -10,3 +10,4 @@ export { default as chinese } from "./chinese.jpg";
 export { default as french } from "./french.jpg";
 export { default as timeP } from "./time.png";
 export { default as love } from "./love.png";
+export { default as loading } from "./Hamburger.gif";
