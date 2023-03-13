@@ -1,0 +1,31 @@
+.acard{
+    height: 70px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 rgba(123, 45, 0, 0.5);
+    background: #0a0a0a;
+    transition: transform 300ms ease;
+    display: flex;
+align-items: center;    
+}
+
+.acard div{
+    width: 35%;
+}
+
+.acard div img{
+    width: 100%;
+}
+.acard:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.acard p{
+    margin-left:20px;
+    font-family: var(--font-playfairBold);
+    background: var(--color-brownGradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

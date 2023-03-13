@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const Cuisine = () => {
   const cuisines = [
@@ -34,7 +35,9 @@ const Cuisine = () => {
     <div className="cuisine section__padding">
       <div className="cuisine__title">
         <h4>Browse our featured Cuisines</h4>
-        <Button variant="outline">Discover More</Button>
+        <Link to="/cuisines">
+          <Button variant="outline">Discover More</Button>
+        </Link>
       </div>
       <div>
         <Swiper
@@ -43,7 +46,7 @@ const Cuisine = () => {
           slidesPerView={"auto"}
           autoplay={{
             delay: 2000,
-            disableOnInteraction:false
+            disableOnInteraction: false,
           }}
           spaceBetween={80}
         >
