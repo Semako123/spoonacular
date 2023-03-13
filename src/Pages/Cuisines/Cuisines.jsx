@@ -62,7 +62,7 @@ const Cuisines = () => {
   ];
   return (
     <div className="section__padding cuisines">
-      <h3>EXPLORE OUR CUISINES</h3>
+      <h3 className="animate__animated animate__pulse" style={{animationIterationCount :"infinite"} }>EXPLORE OUR CUISINES</h3>
       <div className="cuisines__cards">
         {data.map((x, index) => (
           <Link key={index} to={`/search/result?cuisine=${x.name}`}>

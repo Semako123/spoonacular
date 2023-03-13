@@ -1,0 +1,50 @@
+.bcard {
+    width: 270px;
+    /* height: 0px; */
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+    background: #0e0e0e;
+    box-shadow: 0px 1px 2px 0px rgba(193, 107, 1, 0.7),
+        1px 2px 4px 0px rgba(193, 107, 1, 0.7);
+}
+
+.bcard__image {
+    position: relative;
+    height: 140px;
+}
+
+.bcard__image>img {
+    max-width: 100%;
+    border-bottom-right-radius: 20px;
+    transform: rotate(10deg) translate(-15px, -45px);
+    position: absolute;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 200ms;
+}
+
+.bcard:hover {
+    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 1px 2px 0px rgba(193, 107, 1, 0.7),
+        1px 2px 4px 0px rgba(193, 107, 1, 0.7),
+        2px 4px 8px 0px rgba(193, 107, 1, 0.7),
+        2px 4px 16px 0px rgba(193, 107, 1, 0.7);
+    cursor: pointer;
+}
+
+.bcard h5{
+    font-family: var(--font-playfairBold);
+    margin-top: 40px;
+    font-size: 19px;
+    margin-left: 20px;
+    width: 90%;
+    text-align: center;
+    background: var(--color-goldGradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: -1px -1px #a85c00, 1px 1px rgba(0, 0, 0, 0.5);
+}
