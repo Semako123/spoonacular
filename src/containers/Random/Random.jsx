@@ -1,12 +1,12 @@
 import React from "react";
 import "./random.css";
-import axios from "axios";
 import { useLoaderData } from "react-router-dom";
 import { FCard } from "../../components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import API, {params} from "../../API";
 
 const Random = () => {
   const data = useLoaderData();
@@ -41,20 +41,7 @@ const Random = () => {
   );
 };
 
-const config = {
-  headers: {
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "text/plain",
-  },
-};
-const params = {
-  apiKey: "78b5c27daa1b47a39fd33a1e22b23e64",
-};
-const API = axios.create({
-  baseURL: "https://api.spoonacular.com/",
-  https: config,
-  params: params,
-});
+
 
 export const homeLoader = () => {
   return API.get("/recipes/random", { params: { ...params, number: 20 } }).then(

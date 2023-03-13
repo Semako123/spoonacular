@@ -12,7 +12,7 @@ const router = createBrowserRouter(
     <Route path="/">
       <Route index element={<App />} loader={homeLoader} />
       <Route path="search" element={<Search />}>
-        <Route path=":id" element={<Result />} />
+        <Route path="result" element={<Result />} />
       </Route>
       <Route path="cuisines" element={<Cuisines />} />
       <Route path="*" element={<NotFound />} />

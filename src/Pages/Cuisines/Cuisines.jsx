@@ -27,8 +27,9 @@ import {
   spanish,
   thai,
   vietnamese,
-  european
+  european,
 } from "../../assets/images";
+import { Link } from "react-router-dom";
 
 const Cuisines = () => {
   const data = [
@@ -64,9 +65,9 @@ const Cuisines = () => {
       <h3>EXPLORE OUR CUISINES</h3>
       <div className="cuisines__cards">
         {data.map((x, index) => (
-          <ACard key={index} image={x.image}>
-            {x.name}
-          </ACard>
+          <Link key={index} to={`/search/result?cuisine=${x.name}`}>
+            <ACard image={x.image}>{x.name}</ACard>
+          </Link>
         ))}
       </div>
     </div>
