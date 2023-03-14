@@ -3,6 +3,7 @@ import "./categories.css";
 import { useState } from "react";
 import { cake, bread, dessert, pie } from "../../assets/images";
 import { Button } from "../../components";
+import { Link } from "react-router-dom";
 import "animate.css/animate.css";
 
 const Categories = () => {
@@ -87,9 +88,11 @@ const Categories = () => {
                   {x.subtext}
                 </p>
                 <div className="animate__animated animate__zoomIn">
-                  <Button className variant="curved" color={x.color}>
-                    Discover
-                  </Button>
+                  <Link to={`/search/result?query=${x.name}`}>
+                    <Button className variant="curved" color={x.color}>
+                      Discover
+                    </Button>
+                  </Link>
                 </div>
               </>
             )}

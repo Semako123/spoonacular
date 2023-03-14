@@ -48,3 +48,9 @@
     background-clip: text;
     text-shadow: -1px -1px #a85c00, 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+.bcard .button{
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}

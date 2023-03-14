@@ -52,7 +52,7 @@ const Cuisine = () => {
         >
           {cuisines.map((x, index) => (
             <SwiperSlide key={index}>
-              <Card img={x.img}>{`${x.name} Cuisines`}</Card>
+              <Card img={x.img}>{`${x.name}`}</Card>
             </SwiperSlide>
           ))}
         </Swiper>

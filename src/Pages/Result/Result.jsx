@@ -28,9 +28,9 @@ const Result = () => {
     return <Loading />;
   }
   return (
-    <div className="section__padding">
+    <div className="result section__padding">
       {data.map((x, index) => (
-        <BCard key={index} image={x.image} title={x.title} />
+        <BCard key={index} image={x.image} title={x.title} index={index} />
       ))}
     </div>
   );
