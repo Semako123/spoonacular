@@ -32,3 +32,4 @@ export { default as nordic } from "./nordic.jpg";
 export { default as southern } from "./southern.jpg";
 export { default as spanish } from "./spanish.jpg";
 export { default as vietnamese } from "./vietnamese.jpg";
+export { default as search } from "./search.png";

@@ -1,0 +1,8 @@
+.dropdown{
+    position: relative;
+}
+
+.dropdown ul{
+    position: absolute;
+    z-index: 100;
+}
