@@ -12,7 +12,7 @@ const Random = () => {
   const data = useLoaderData();
   return (
     <div className="section__padding random">
-      <h4>Looking for random inspiration on your next adventure</h4>
+      <h4>Looking for random inspirations on your next adventure</h4>
       <div>
         <Swiper
           pagination={true}

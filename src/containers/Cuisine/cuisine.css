@@ -1,5 +1,4 @@
-.cuisine {
-}
+.cuisine {}
 
 .cuisine__title {
     display: flex;
@@ -11,6 +10,9 @@
     font-family: var(--font-AgencyFB);
     font-size: 25px;
     margin-bottom: 0;
+    background: var(--color-goldGradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .swiper-wrapper {

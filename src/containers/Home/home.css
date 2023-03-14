@@ -27,10 +27,16 @@
     width: 60%;
     margin-bottom: 20px;
     margin-top: -20px;
+    background: var(--color-brownGradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.home__content p{
+.home__content p {
     font-size: 25px;
     font-weight: 100;
     margin-bottom: 60px;
+    background: var(--color-brownGradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

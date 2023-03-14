@@ -3,4 +3,7 @@
     font-family: var(--font-AgencyFB);
     font-size: 35px;
     margin-bottom: -20px;
+    background: var(--color-goldGradient);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
 }
