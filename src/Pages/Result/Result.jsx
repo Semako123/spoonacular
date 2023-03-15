@@ -9,6 +9,8 @@ import { Loading } from "../../containers";
 const Result = () => {
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
+  let query = {};
+
   useEffect(() => {
     API.get("/recipes/complexSearch", { params: { ...params, ...query } }).then(
       (res) => {
@@ -16,8 +18,7 @@ const Result = () => {
         setData(res.data.results);
       }
     );
-  }, []);
-  let query = {};
+  }, [query]);
   const [searchParams, setParams] = useSearchParams();
   const param = searchParams.entries();
   for (const i of param) {
