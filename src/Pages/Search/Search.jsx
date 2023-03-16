@@ -19,8 +19,11 @@ const Search = () => {
 
   const updatePara = (key, value) => {
     const newParams = new URLSearchParams(searchParams);
-    newParams.set(key, value);
     if (value !== null) {
+      newParams.set(key, value);
+      setSearchParams(newParams);
+    } else {
+      newParams.delete(key);
       setSearchParams(newParams);
     }
   };

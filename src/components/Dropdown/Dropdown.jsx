@@ -37,10 +37,10 @@ const Dropdown = ({ id, data, title, onchange }) => {
           data.map((item, index) => (
             <li
               className="animate__animated animate__fadeInUp"
-              key={`${item.value}${index}`}
+              key={`${item}${index}`}
               {...getItemProps({ item, index })}
             >
-              <span>{item}</span>
+              <span>{item ? item : title}</span>
             </li>
           ))}
       </ul>

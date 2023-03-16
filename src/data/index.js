@@ -57,6 +57,7 @@ export const cuisine_data = [
 ];
 
 export const cuisine_list = [
+  null,
   "African",
   "American",
   "British",
@@ -86,6 +87,7 @@ export const cuisine_list = [
 ];
 
 export const meal_type = [
+  null,
   "main course",
   "side dish",
   "dessert",
@@ -103,6 +105,7 @@ export const meal_type = [
 ];
 
 export const intolerances_list = [
+  null,
   "Dairy",
   "Egg",
   "Gluten",
@@ -118,6 +121,7 @@ export const intolerances_list = [
 ];
 
 export const diet_list = [
+  null,
   "Gluten Free",
   "Ketogenic",
   "Vegetarian",
