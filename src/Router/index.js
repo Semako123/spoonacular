@@ -4,7 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import App from "../App";
-import { Search, Result, NotFound, Cuisines } from "../Pages";
+import { Search, Result, NotFound, Cuisines, Recipe } from "../Pages";
 import { homeLoader } from "../containers/Random/Random";
 
 const router = createBrowserRouter(
@@ -15,6 +15,7 @@ const router = createBrowserRouter(
         <Route path="result" element={<Result />} />
       </Route>
       <Route path="cuisines" element={<Cuisines />} />
+      <Route path="recipe/:id" element={<Recipe />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )

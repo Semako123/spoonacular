@@ -17,6 +17,7 @@ const Dropdown = ({ id, data, title, onchange }) => {
 
   useEffect(() => {
     onchange(id, selectedItem);
+    // eslint-disable-next-line
   }, [selectedItem]);
 
   return (
