@@ -7,7 +7,7 @@ const config = {
   },
 };
 export const params = {
-  apiKey: "78b5c27daa1b47a39fd33a1e22b23e64",
+  apiKey: "2f2001aef23b46b6837008671ba6e399",
   number: 100,
 };
 

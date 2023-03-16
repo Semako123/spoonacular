@@ -1,15 +1,23 @@
 import "./result.css";
 import React from "react";
-import { useSearchParams } from "react-router-dom";
 import API, { params } from "../../API";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { BCard } from "../../components";
 import { Loading } from "../../containers";
+import { useLocation } from "react-router-dom";
 
 const Result = () => {
+  const location = useLocation();
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
-  let query = {};
+  const query = useMemo(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const params = {};
+    for (let param of searchParams.entries()) {
+      params[param[0]] = param[1];
+    }
+    return params;
+  }, [location.search]);
 
   useEffect(() => {
     API.get("/recipes/complexSearch", { params: { ...params, ...query } }).then(
@@ -19,11 +27,6 @@ const Result = () => {
       }
     );
   }, [query]);
-  const [searchParams, setParams] = useSearchParams();
-  const param = searchParams.entries();
-  for (const i of param) {
-    query[i[0]] = i[1];
-  }
 
   if (isLoading) {
     return <Loading />;

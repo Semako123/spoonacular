@@ -2,6 +2,7 @@ import "./dropdown.css";
 import React from "react";
 import { useSelect } from "downshift";
 import { useEffect } from "react";
+import "animate.css/animate.css";
 
 const Dropdown = ({ id, data, title, onchange }) => {
   const {
@@ -20,19 +21,22 @@ const Dropdown = ({ id, data, title, onchange }) => {
 
   return (
     <div className="dropdown">
-      <div className="w-72 flex flex-col gap-1">
+      <div className="dropdown__title">
         <div
           className="p-2 bg-white flex justify-between cursor-pointer"
           {...getToggleButtonProps()}
         >
           <span>{selectedItem ? selectedItem : title}</span>
-          <span className="px-2">{isOpen ? <>&#8593;</> : <>&#8595;</>}</span>
+          <span style={{ paddingLeft: "10px" }}>
+            {isOpen ? <>&#8593;</> : <>&#8595;</>}
+          </span>
         </div>
       </div>
       <ul {...getMenuProps()}>
         {isOpen &&
           data.map((item, index) => (
             <li
+              className="animate__animated animate__fadeInUp"
               key={`${item.value}${index}`}
               {...getItemProps({ item, index })}
             >
