@@ -20,7 +20,13 @@ function Recipe() {
   if (loading) {
     return <Loading />;
   }
-  return <div>Recipe</div>;
+  return (
+    <div className="recipr">
+      <div className="recipe__heading"></div>
+      <div className="recipe__body"></div>
+      <div className="recipe__similar"></div>
+    </div>
+  );
 }
 
 export default Recipe;
