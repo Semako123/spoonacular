@@ -32,6 +32,7 @@ const Random = () => {
                 time={x.readyInMinutes}
                 cuisines={x.cuisines}
                 image={x.image}
+                id={x.id}
               />
             </SwiperSlide>
           ))}

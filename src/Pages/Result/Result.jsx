@@ -20,7 +20,7 @@ const Result = () => {
   }, [location.search]);
 
   useEffect(() => {
-    API.get("/recipes/complexSearch", { params: { ...params, ...query } }).then(
+    API.get("/recipes/complexSearch", { params: { ...params, ...query,  } }).then(
       (res) => {
         setLoading(false);
         setData(res.data.results);
@@ -34,7 +34,7 @@ const Result = () => {
   return (
     <div className="result section__padding">
       {data.map((x, index) => (
-        <BCard key={index} image={x.image} title={x.title} index={index} />
+        <BCard key={index} image={x.image} title={x.title} id={x.id} index={index} />
       ))}
     </div>
   );

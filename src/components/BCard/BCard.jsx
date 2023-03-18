@@ -1,8 +1,10 @@
 import "./bcard.css";
 import React from "react";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
-const BCard = ({ title, image, index }) => {
+const BCard = ({ title, image, index, id }) => {
+  const navigate = useNavigate();
   const hover = (e) => {
     console.log(e);
     const image = document.querySelectorAll(".bcard img");
@@ -19,7 +21,15 @@ const BCard = ({ title, image, index }) => {
         <img src={image} alt="" />
       </div>
       <h5>{title}</h5>
-      <Button variant="curved" color="gold">Recipe</Button>
+      <Button
+        variant="curved"
+        color="gold"
+        onClick={() => {
+          navigate(`/recipe/${id}`);
+        }}
+      >
+        Recipe
+      </Button>
     </div>
   );
 };

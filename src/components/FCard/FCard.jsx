@@ -2,8 +2,10 @@ import "./FCard.css";
 import React from "react";
 import { Button } from "../";
 import { timeP, love } from "../../assets/images";
+import { useNavigate } from "react-router-dom";
 
-const FCard = ({ title, cuisines, likes, time, image }) => {
+const FCard = ({ title, cuisines, likes, time, image, id }) => {
+  const navigate = useNavigate();
   return (
     <div className="fcard">
       <img src={image} alt="" />
@@ -17,8 +19,16 @@ const FCard = ({ title, cuisines, likes, time, image }) => {
         <div className="fcard__content-details">
           <img src={love} alt="" />
           {`${likes} likes`}
-              </div>
-              <Button variant="curved" color="gold">Recipe Here!</Button>
+        </div>
+        <Button
+          variant="curved"
+          color="gold"
+          onClick={() => {
+            navigate(`/recipe/${id}`);
+          }}
+        >
+          Recipe Here!
+        </Button>
       </div>
     </div>
   );
