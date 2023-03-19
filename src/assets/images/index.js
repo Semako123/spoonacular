@@ -33,3 +33,6 @@ export { default as southern } from "./southern.jpg";
 export { default as spanish } from "./spanish.jpg";
 export { default as vietnamese } from "./vietnamese.jpg";
 export { default as search } from "./search.png";
+export { default as loupe } from "./loupe.png";
+export { default as restaurant } from "./restaurant.png";
+export { default as dish } from "./dish.png";

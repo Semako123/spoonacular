@@ -6,11 +6,13 @@ import {
 import App from "../App";
 import { Search, Result, NotFound, Cuisines, Recipe } from "../Pages";
 import { homeLoader } from "../containers/Random/Random";
+import { Navbar } from "../components";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/">
+    <Route path="/" element={<Navbar />}>
       <Route index element={<App />} loader={homeLoader} />
+      <Route path="home" element={<App />} loader={homeLoader} />
       <Route path="search" element={<Search />}>
         <Route path="result" element={<Result />} />
       </Route>

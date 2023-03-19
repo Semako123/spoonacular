@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 40px;
+    align-items: center;
+    position: absolute;
+    z-index: 99999999;
+    width: 100%;
+}
+
+.navbar img{
+    width: 40px;
+}
+
+.navbar div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
