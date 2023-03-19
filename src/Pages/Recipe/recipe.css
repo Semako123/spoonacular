@@ -11,7 +11,6 @@
     padding-right: 1000px;
     height: 200px;
     align-items: center;
-
 }
 
 .spoonacular-ingredients-menu span {
@@ -27,11 +26,11 @@
     height: 150px;
 }
 
-.spoonacular-ingredient img{
+.spoonacular-ingredient img {
     width: 100%;
 }
 
-.recipe{
+.recipe {
     padding-bottom: 0px !important;
 }
 
@@ -126,12 +125,12 @@
     text-transform: capitalize;
 }
 
-.recipe__summary{
+.recipe__summary {
     background: var(--color-greyGradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.spoonacular-name{
+.spoonacular-name {
     text-align: center;
 }

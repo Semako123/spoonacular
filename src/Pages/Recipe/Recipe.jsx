@@ -27,6 +27,7 @@ function Recipe() {
       summary.innerHTML = data.summary;
     });
   }, [data, id]);
+
   if (loading) {
     return <Loading />;
   }
@@ -58,7 +59,7 @@ function Recipe() {
       <div className="recipe__instructions">
         <h5>Instructions</h5>
         <p>
-          See detailed Instructions at {" "}
+          See detailed Instructions at{" "}
           <a href={data.sourceUrl} target="_blank" rel="noreferrer">
             {data.sourceName}
           </a>
@@ -72,9 +73,6 @@ function Recipe() {
               ? data.winePairing.pairingText
               : "None"}
           </p>
-          {data.winePairing.productMatches && (
-            <div>{data.winePairing.productMatches.map((x, index) => x.id)}</div>
-          )}
         </div>
       )}
       <div className="recipe__ingredients">
