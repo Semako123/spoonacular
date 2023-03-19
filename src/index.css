@@ -9,6 +9,7 @@ body {
 body {
     background-color: var(--color-background);
     color: #fff;
+    overflow-x: hidden;
 }
 
 a {
@@ -28,7 +29,10 @@ a {
     --font-playfairBold: 'Playfair Bold';
     --font-biryaniBold: 'Biryani-bold';
     --font-AgencyFB: 'AgencyFB';
-    --color-goldGradient: linear-gradient(180deg, #EBB559 0%, #BE7319 100%);
+    --color-greyGradient: linear-gradient(180deg,
+        #dfdfdf 0%,
+        #727272 100%);
+        --color-goldGradient: linear-gradient(180deg, #EBB559 0%, #BE7319 100%);
     --color-brownGradient: linear-gradient(270deg, #68401B 0%, #FAE6A6 100%);
     --color-blueGradient: linear-gradient(270deg, #00ACB7 0%, #5BD8FF 100%);
     --color-purpleGradient: linear-gradient(270deg, #EDBD5B 0%, #AB1580 100%);

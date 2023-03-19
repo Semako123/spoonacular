@@ -36,27 +36,36 @@ function Recipe() {
         <h3>{data.title}</h3>
         <img src={data.image} alt="" />
       </div>
-        <p className="recipe__summary"></p>
+      <p className="recipe__summary"></p>
       <div className="recipe__body">
-        <div>
-          <p>Servings: {data.servings}</p>
-          <p>Ready in: {data.readyInMinutes} minutes</p>
-          <p>Health Score: {data.healthScore}</p>
-          <p>Price per Serving: ${data.pricePerServing}</p>
+        <div className="recipe__info">
+          <div>
+            <p>Servings: {data.servings}</p>
+          </div>
+          <div>
+            <p>Ready in: {data.readyInMinutes} minutes</p>
+          </div>
+          <div>
+            <p>Health Score: {data.healthScore}</p>
+          </div>
+          <div>
+            <p>Price per Serving: ${data.pricePerServing}</p>
+          </div>
           {data.diets && data.diets.map((x, index) => x)}
           <p>Dish Type: {data.dishTypes.map((x, index) => x)}</p>
         </div>
       </div>
-      <div className="recipe__similar">
+      <div className="recipe__instructions">
         <h5>Instructions</h5>
         <p>
+          See detailed Instructions at {" "}
           <a href={data.sourceUrl} target="_blank" rel="noreferrer">
-            See detailed Instructions at {data.sourceName}
+            {data.sourceName}
           </a>
         </p>
       </div>
       {data.winePairing && (
-        <div>
+        <div className="recipe__wines">
           <h3>Wine Pairing</h3>
           <p>
             {data.winePairing.pairingText
@@ -68,7 +77,7 @@ function Recipe() {
           )}
         </div>
       )}
-      <div>
+      <div className="recipe__ingredients">
         <h3>Ingredients</h3>
         <div className="recipe__ingredientWidget"></div>
       </div>

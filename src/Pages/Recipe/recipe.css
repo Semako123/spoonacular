@@ -1,36 +1,137 @@
-#spoonacular-ingredient-vis-list{
+#spoonacular-ingredient-vis-list {
     display: none;
 }
 
-.recipe__ingredientWidget input, .recipe__ingredientWidget label{
+#spoonacular-ingredient-vis-grid {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 1250px;
+    padding-right: 1000px;
+    height: 200px;
+    align-items: center;
+
+}
+
+.spoonacular-ingredients-menu span {
     display: none;
+}
+
+.spoonacular-ingredient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+}
+
+.spoonacular-ingredient img{
+    width: 100%;
 }
 
 .recipe{
+    padding-bottom: 0px !important;
+}
+
+.recipe__ingredientWidget input,
+.recipe__ingredientWidget label {
+    display: none;
+}
+
+.recipe {
     font-family: var(--font-biryaniRegular);
 }
 
-.recipe__heading h3{
-    font-family: var(--font-biryaniBold);
+.recipe__heading h3 {
+    font-family: var(--font-playfairBold);
     font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 10px;
     background: var(--color-goldGradient);
     -webkit-text-fill-color: transparent;
-    background-clip:text;
+    background-clip: text;
 }
 
-.recipe__heading{
+.recipe__heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.recipe__summary{
+.recipe__summary {
     font-size: 13px;
     width: 80%;
     margin: auto;
     margin-top: 20px;
+    text-align: center;
+}
+
+.recipe__info {
+    background: var(--color-brownGradient);
+    font-family: var(--font-playfairRegular);
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    color: rgb(52, 36, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe__info p {
+    font-size: 20px;
+}
+
+.recipe__instructions h5,
+.recipe__wines h3,
+.recipe__ingredients h3 {
+    font-family: var(--font-playfairRegular);
+    font-size: 25px;
+    background: var(--color-goldGradient);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.recipe__instructions p,
+.recipe__wines p {
+    margin-left: 10px;
+    margin-top: -20px;
+    font-size: 15px;
+    background: var(--color-greyGradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.recipe__instructions a {
+    text-decoration: underline !important;
+    background: none;
+    -webkit-text-fill-color: rgb(221, 138, 5);
+}
+
+.recipe__ingredientWidget>div:last-child {
+    display: none;
+}
+
+.spoonacular-name,
+.spoonacular-amount {
+    background: var(--color-greyGradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+}
+
+.recipe__summary{
+    background: var(--color-greyGradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.spoonacular-name{
     text-align: center;
 }
