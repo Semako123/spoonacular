@@ -4,11 +4,8 @@
 
 #spoonacular-ingredient-vis-grid {
     display: flex;
-    justify-content: space-evenly;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding-left: 1250px;
-    padding-right: 1000px;
     height: 200px;
     align-items: center;
 }
